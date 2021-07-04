@@ -1,0 +1,53 @@
+.u-text-bold {
+  font-weight: bold;
+}
+
+.u-text-14 {
+  @include font-size(14px, 1.25);
+}
+
+.u-text-paragraph {
+  @include font-size(14px, 1.43);
+  color: rgba(white, 0.8);
+}
+
+.u-text-28 {
+  @include font-size(28px, 1.29);
+}
+
+.u-text-50 {
+  @include font-size(50px, 1.28);
+}
+
+.u-text-semi-transparent {
+  color: rgba(white, 0.8);
+}
+
+.u-text-white {
+  color: white;
+}
+
+.u-text-18 {
+  @include font-size(18px, 1.33);
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-text-wrap {
+  white-space: pre-wrap;
+}
+
+.u-text-heading {
+  font-family: $secondaryFontFamily;
+  font-weight: bold;
+}

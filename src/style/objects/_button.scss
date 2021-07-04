@@ -1,0 +1,27 @@
+.o-bare-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.o-link-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
+  }
+}

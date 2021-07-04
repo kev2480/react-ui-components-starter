@@ -1,0 +1,11 @@
+@mixin zIndexHack {
+  @keyframes zIndexHack {
+    from {
+      z-index: 9999;
+    }
+
+    99% {
+      z-index: -1;
+    }
+  }
+}
