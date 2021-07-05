@@ -1,0 +1,21 @@
+.c-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $persian-green;
+  @include font-size(18px);
+
+  color: $white;
+  text-transform: uppercase;
+  &__inner {
+    max-width: $global-main-width;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  h1, a {
+    font-size: inherit;
+    margin: 0px;
+    color: inherit;
+  }
+}

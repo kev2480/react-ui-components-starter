@@ -6,6 +6,8 @@
 // need to be made available to the entire codebase.
 // makes use of !default for potential theming: https://thoughtbot.com/blog/sass-default
 
+
+$global-main-width: 1336px;
 $global-radius: 5px !default;
 $global-transition: all 300ms ease-in-out !default;
 $global-brand-color: $white !default;
