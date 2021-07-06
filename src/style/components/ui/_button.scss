@@ -1,34 +1,35 @@
 .c-button {
   background-color: $white;
-  border: 3px solid $charcoal-dark;
+  border: 3px solid $darkGrey;
   padding: 0.75rem 1rem;
   cursor: pointer;
   text-transform: uppercase;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   font-weight: bold;
   min-width: 190px;
   text-align: center;
+  color: $darkGrey;
 
   &:hover, &:focus {
-    background-color: $charcoal-light;
+    background-color: $darkGrey;
     color: $white;
   }
 
   &--primary {
-    background-color: $persian-green;
-    color: $white;
-    border-color: $persian-green-dark;
+    background-color: $primary;
+    border-color: $primary-dark;
     &:hover, &:focus {
-      background-color: $persian-green-light;
+      background-color: $primary-light;
+      color: $darkGrey;
     }
   }
 
   &--warning {
-    background-color: $burnt-sienna;
-    border-color: $burnt-sienna-dark;
+    background-color: $warning;
+    border-color: $warning-dark;
     &:hover, &:focus {
-      background-color: $burnt-sienna-light;
-      color: $black;
+      background-color: $warning-light;
+      color: $darkGrey;
     }
   }
 }

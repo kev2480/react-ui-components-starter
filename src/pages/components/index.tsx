@@ -35,6 +35,24 @@ const Components = (props: Props) => {
           </div>
         </Card>
       </section>
+      <section>
+        <h2>Colours</h2>
+        <div className="u-background-primary u-padding-tiny u-margin-bottom-small">
+          <p className="u-text-bold">Primary</p>
+        </div>
+        <div className="u-background-secondary u-padding-tiny u-text-white u-margin-bottom-small">
+          <p className="u-text-bold">Secondary</p>
+        </div>
+        <div className="u-background-warning u-padding-tiny u-margin-bottom-small">
+          <p className="u-text-bold">Warning</p>
+        </div>
+        <div className="u-background-tertiary u-padding-tiny u-margin-bottom-small">
+          <p className="u-text-bold">Tertiary</p>
+        </div>
+        <div className="u-background-error u-padding-tiny u-text-white u-margin-bottom-small">
+          <p className="u-text-bold">Error</p>
+        </div>
+      </section>
     </div>
   )
 }

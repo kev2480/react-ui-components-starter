@@ -1,41 +1,34 @@
 $green: #a0ff1f !default;
-$pink: #f70087 !default;
 $black: #000000 !default;
 $white: #ffffff !default;
-$darkGrey: #5b5b5b !default;
+$darkGrey: #262626 !default;
 $midGrey: #c3c3c3 !default;
 $lightGrey: #f8f8f8 !default;
 
 
+$cyan: #2FF3E0;
+$gold: #F8D210;
+$pink: #FA26A0;
+$chilli: #F51720;
+
+$primary: $cyan;
+$secondary: $pink;
+$tertiary: $gold;
+$warning: $gold;
+$error: $chilli;
+
 /* SCSS RGB */
-$charcoal: rgba(38, 70, 83, 1);
-$persian-green: rgba(42, 157, 143, 1);
-$orange-yellow-crayola: rgba(233, 196, 106, 1);
-$sandy-brown: rgba(244, 162, 97, 1);
-$burnt-sienna: rgba(231, 111, 81, 1);
+$secondary-light: lighten($secondary, 10%);
+$primary-light: lighten($primary, 10%);
+$tertiary-light: lighten($tertiary, 10%);
+$warning-light: lighten($warning, 10%);
+$error-light: lighten($error, 10%);
 
-$charcoal-light: lighten($charcoal, 10%);
-$persian-green-light: lighten($persian-green, 10%);
-$orange-yellow-crayola-light: lighten($orange-yellow-crayola, 10%);
-$sandy-brown-light: lighten($sandy-brown, 10%);
-$burnt-sienna-light: lighten($burnt-sienna, 10%);
-
-$charcoal-dark: darken($charcoal, 10%);
-$persian-green-dark: darken($persian-green, 10%);
-$orange-yellow-crayola-dark: darken($orange-yellow-crayola, 10%);
-$sandy-brown-dark: darken($sandy-brown, 10%);
-$burnt-sienna-dark: darken($burnt-sienna, 10%);
-
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
-$gradient-right: linear-gradient(90deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
-$gradient-bottom: linear-gradient(180deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
-$gradient-left: linear-gradient(270deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
-$gradient-top-right: linear-gradient(45deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
-$gradient-bottom-right: linear-gradient(135deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
-$gradient-top-left: linear-gradient(225deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
-$gradient-bottom-left: linear-gradient(315deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
-$gradient-radial: radial-gradient(#264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
+$secondary-dark: darken($secondary, 10%);
+$primary-dark: darken($primary, 10%);
+$tertiary-dark: darken($tertiary, 10%);
+$warning-dark: darken($warning, 10%);
+$error-dark: darken($error, 10%);
 
 // RESPONSIVE BREAKPOINTS
 $xs: "350px";

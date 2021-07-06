@@ -3,10 +3,10 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: $persian-green;
+  background-color: $primary;
   @include font-size(18px);
 
-  color: $white;
+  color: $darkGrey;
   text-transform: uppercase;
   &__inner {
     max-width: $global-main-width;

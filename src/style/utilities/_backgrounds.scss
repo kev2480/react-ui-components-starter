@@ -1,3 +1,23 @@
 .u-background-black {
   background: black;
 }
+
+.u-background-primary {
+  background-color: $primary;
+}
+
+.u-background-secondary {
+  background-color: $secondary;
+}
+
+.u-background-tertiary {
+  background-color: $tertiary;
+}
+
+.u-background-warning {
+  background-color: $warning;
+}
+
+.u-background-error {
+  background-color: $error;
+}
