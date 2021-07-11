@@ -1,0 +1,50 @@
+.c-form {
+  width: 100%;
+
+  fieldset {
+    border: 0;
+    margin-bottom: 0.3rem;
+    padding: 0px;
+  }
+
+  &__label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    @include font-size(14px);
+    &--hasError {
+      color: $error;
+    }
+  }
+
+  &__input {
+    &[type='text'], &[type='number'], &[type='search'], &[type='password'], &[type='email'], &[type='url'], &[type='tel']
+     {
+      border: 1px solid transparent;
+      outline: none;
+      transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease;
+      height: 40px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background-color: $lightGrey;
+      width: 100%;
+
+      &:hover, &:focus {
+        background-color: #fff;
+        border-color: rgba($secondary, 0.4);
+        box-shadow: 0 0 0 4px rgba($secondary, 0.1);
+      }
+    }
+
+
+    &--hasError {
+      background-color: #fff;
+      border-color: rgba($error, 0.5) !important;
+      box-shadow: 0 0 0 4px rgba($error, 0.1);
+    }
+  }
+
+  &__error {
+    color: $error;
+  }
+}

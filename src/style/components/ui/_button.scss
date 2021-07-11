@@ -32,4 +32,10 @@
       color: $darkGrey;
     }
   }
+
+  &--small {
+    min-width: 100px;
+    @include font-size(14px);
+    padding: 0.37rem 0.5rem;
+  }
 }
