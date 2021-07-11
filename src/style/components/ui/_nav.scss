@@ -3,8 +3,9 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: $primary;
+  background-color: white;
   @include font-size(18px);
+  border-bottom: 4px solid $primary;
 
   color: $darkGrey;
   text-transform: uppercase;

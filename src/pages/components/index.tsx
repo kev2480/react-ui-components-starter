@@ -37,21 +37,24 @@ const Components = (props: Props) => {
       </section>
       <section>
         <h2>Colours</h2>
-        <div className="u-background-primary u-padding-tiny u-margin-bottom-small">
-          <p className="u-text-bold">Primary</p>
+        <div className="u-flex u-flex--wrap">
+          <div className="u-background-primary u-margin-bottom-small u-margin-right-small u-flex u-flex--align-center u-flex--justify-center" style={{width: 100, height: 100}}>
+            <p className="u-text-bold">Primary</p>
+          </div>
+          <div className="u-background-secondary u-text-white  u-margin-bottom-small u-margin-right-small u-flex u-flex--align-center u-flex--justify-center" style={{width: 100, height: 100}}>
+            <p className="u-text-bold">Secondary</p>
+          </div>
+          <div className="u-background-warning u-margin-bottom-small u-margin-right-small u-flex u-flex--align-center u-flex--justify-center" style={{width: 100, height: 100}}>
+            <p className="u-text-bold">Warning</p>
+          </div>
+          <div className="u-background-tertiary u-margin-bottom-small u-margin-right-small u-flex u-flex--align-center u-flex--justify-center" style={{width: 100, height: 100}}>
+            <p className="u-text-bold">Tertiary</p>
+          </div>
+          <div className="u-background-error u-text-white u-margin-bottom-small u-margin-right-small  u-flex u-flex--align-center u-flex--justify-center" style={{width: 100, height: 100}}>
+            <p className="u-text-bold">Error</p>
+          </div>
         </div>
-        <div className="u-background-secondary u-padding-tiny u-text-white u-margin-bottom-small">
-          <p className="u-text-bold">Secondary</p>
-        </div>
-        <div className="u-background-warning u-padding-tiny u-margin-bottom-small">
-          <p className="u-text-bold">Warning</p>
-        </div>
-        <div className="u-background-tertiary u-padding-tiny u-margin-bottom-small">
-          <p className="u-text-bold">Tertiary</p>
-        </div>
-        <div className="u-background-error u-padding-tiny u-text-white u-margin-bottom-small">
-          <p className="u-text-bold">Error</p>
-        </div>
+
       </section>
     </div>
   )

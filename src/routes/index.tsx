@@ -4,7 +4,7 @@ import Components from "pages/components";
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/ui" component={Components} />
+      <Route path="/" component={Components} />
     </Switch>
   )
 }
