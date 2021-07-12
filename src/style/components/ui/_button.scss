@@ -1,6 +1,6 @@
 .c-button {
   background-color: $white;
-  border: 3px solid $darkGrey;
+  border: 3px solid transparent;
   padding: 0.75rem 1rem;
   cursor: pointer;
   text-transform: uppercase;
@@ -12,25 +12,29 @@
   transition: all 0.2s ease;
 
   &:hover, &:focus {
-    background-color: $darkGrey;
-    color: $white;
+    border: 3px solid $black;
+    color: $darkGrey;
+    box-shadow: 0 0 0 4px rgba($black, 0.4);
   }
 
   &--primary {
     background-color: $primary;
-    border-color: $primary-dark;
+    // border-color: $primary-dark;
     &:hover, &:focus {
-      background-color: $primary-light;
+      background-color: $white;
+      border: 3px solid $primary;
       color: $darkGrey;
+      box-shadow: 0 0 0 4px rgba($primary, 0.4);
     }
   }
 
   &--warning {
     background-color: $warning;
-    border-color: $warning-dark;
     &:hover, &:focus {
-      background-color: $warning-light;
+      background-color: $white;
+      border: 3px solid $warning;
       color: $darkGrey;
+      box-shadow: 0 0 0 4px rgba($warning, 0.4);
     }
   }
 
@@ -49,12 +53,12 @@
     align-items: center;
     padding: 0px;
     border-radius: 50%;
-    border: 0px;
-    box-shadow: 0 0 4px #bababa;
+    border: 2px solid transparent;
+    background-color: #f0f0f0;
     &:hover, &:focus {
       background-color: white;
-      box-shadow: 0 0 7px #bababa;
-      border: 1px solid black;
+      box-shadow: 0 0 0 4px #bababa;
+      border: 2px solid black;
     }
   }
 }
