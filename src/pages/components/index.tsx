@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "components/ui/Button";
 import Card from "components/ui/Card";
 import Form from "components/ui/Form";
@@ -5,12 +6,15 @@ import Label from "components/ui/Form/label";
 import Input from "components/ui/Form/input";
 import Error from "components/ui/Form/error";
 import variants from "constants/variants";
+import Icon from "components/ui/Icon";
 
 interface Props {
 
 }
 
 const Components = (props: Props) => {
+  const [buttonClick, setButtonClick] = useState(false);
+
   return (
     <div>
       <h1>A list of components!</h1>
@@ -82,6 +86,16 @@ const Components = (props: Props) => {
             </div>
           </Form>
         </Card>
+      </section>
+      <section>
+        <h2>Icons</h2>
+        <div className="u-flex u-flex--wrap">
+          <Icon name="heart" width="32" height="32" className="u-margin-right-small"/>
+          <Icon name="heart-red" width="32" height="32" className="u-margin-right-small"/>
+          <Button variant="icon" onClick={() => setButtonClick(!buttonClick)} className="u-margin-right-small">
+            <Icon name={buttonClick ? "heart-red" : "heart"} width="32" height="32" />
+          </Button>
+        </div>
       </section>
     </div>
   )

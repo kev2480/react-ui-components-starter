@@ -9,6 +9,7 @@
   min-width: 190px;
   text-align: center;
   color: $darkGrey;
+  transition: all 0.2s ease;
 
   &:hover, &:focus {
     background-color: $darkGrey;
@@ -37,5 +38,23 @@
     min-width: 100px;
     @include font-size(14px);
     padding: 0.37rem 0.5rem;
+  }
+
+  &--icon {
+    min-width: unset;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 50%;
+    border: 0px;
+    box-shadow: 0 0 4px #bababa;
+    &:hover, &:focus {
+      background-color: white;
+      box-shadow: 0 0 7px #bababa;
+      border: 1px solid black;
+    }
   }
 }
