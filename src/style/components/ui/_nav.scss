@@ -13,10 +13,17 @@
     max-width: $global-main-width;
     margin: 0 auto;
     padding: 1rem;
+    transition: padding 0.3s ease;
   }
   h1, a {
     font-size: inherit;
     margin: 0px;
     color: inherit;
+  }
+
+  &--scrolled {
+    .c-nav__inner {
+      padding: 0.5rem 1rem;
+    }
   }
 }
